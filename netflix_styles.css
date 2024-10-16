@@ -1,0 +1,195 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    /*box-shadow: 100px 100px 100px rgba(219, 26, 26, 0.911);*/
+  background-color: black;
+  color: white;  
+  font-family: sans-serif;
+}
+header{
+    height:100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("images/IN-en-20231002-popsignuptwoweeks-perspective_alpha_website_medium.jpg") ;
+}
+.navbar{
+    padding-top:27px;
+    position: absolute;
+    top:0%;
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+}
+.netflixlogo{
+    width: 100%;
+}
+.netflix_logo{
+    padding-left:200px;
+    width:22%;
+}
+.nav_items{
+    padding-right: 14%;
+    display:flex;
+    gap:30px;
+}
+.nav_select_lang .lang_dropdown{
+    height:37px;
+    width:130px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    font-weight:500;
+    font-size: 18px;
+}
+.Signin_button .signin{
+    border-style: inset;
+    height:37px;
+    width:80px;
+    background-color: red;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.head_content{
+    width:75%;
+    position: absolute;
+    top:47%;
+    left:50%;
+   /* background-color: aliceblue;*/
+    transform: translate(-50%,-50%);
+}
+.para_1 h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight:800;
+}
+.para_2 h4{
+    text-align:center;
+    font-size:25px;
+    font-weight: 400;
+}
+.para_3 h6{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    padding-top:10px;
+}
+.head_items{
+    padding-top: 20px;;
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+}
+.item_email input[type="text"]{
+    background-color: transparent;
+    width:380px;
+    height:50px;
+    border-style:solid;
+    border-width: 0.5px;
+    border-radius: 3px;
+    border-color: rgba(243, 237, 237, 0.823);
+}
+.item_email input::placeholder{
+    padding-left: 20px;
+    font-size: 17px;
+    color: rgba(243, 237, 237, 0.823); 
+}
+.item_button button{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 10px;
+    width:150px;
+    height:50px;
+}
+.features{
+    height:60vh;
+    padding-bottom: 40%;
+    /*position: absolute;*/
+}
+.features .sub-features{
+    /*margin-right:20%;*/
+    padding-top: 4%; 
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+.sub_feature_text{
+    width:40%;
+    margin-left: 10%;
+}
+.subtext1 p{
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 20%;
+    /*margin-left: 10%;*/
+}
+.subtext2 p{
+    padding-top: 20px;
+    font-size: 30px;
+}
+.sub_image .img1{
+    width: 80%;
+   /* padding-left:200 px;*/
+    padding-top: 20px;
+}
+hr{
+    border-width:1px ;
+    border-color: rgba(100, 94, 94, 0.7);
+}
+.query{
+    padding-top: 100px;
+    height:60vh;
+    /*gap: 10px;*/
+    justify-content:center;
+    /*align-items: center;*/
+}
+.query-header{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+.query-content{
+    margin-top: 10px;
+    width:70%;
+    margin-left:15%
+}
+.query-content .query-que{
+    font-size: 27px;
+    font-weight: 400;
+    padding: 10px;
+    background-color: rgb(46, 53, 58);
+    height: 80px;
+    line-height: 65px;
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.query-content .query-ans{
+    font-size: 27px;
+    height:0;
+    overflow: hidden;
+    padding-top: 5px;
+    margin-left: 30px;
+}
+.query-content .query-que::after{
+    content:"+";
+    position: absolute;
+    right: 25px;
+    transition: .5s;
+}
+.query .query-content.active .query-ans{
+    height: auto;
+    transition: .5s;
+}
+.query-content.active .query-que::after{
+    content: "-";
+    transition: .5s;
+}
+.query-content .query-ans:active{
+    transition: .5s;
+}

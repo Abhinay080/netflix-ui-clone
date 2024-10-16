@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="home_page.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage - Netflix</title>
+    </head>
+    <body>
+        <header class="Netflix-header">
+            <div class="Netflix-img">
+                <img src="netflix-images/netflix-logo.png" alt="netflix-logo" class="logo">
+            </div>
+            <div class="header-content">
+                <div class="navigation-content">
+                <a href="" role="button">Home</a>
+                <a href="" role="button">TV Shows</a>
+                <a href="" role="button">Movies</a>
+                <a href="" role="button">News & Popular</a>
+                <a href="" role="button">My List</a>
+                <a href="" role="button">Browse by Languages</a>
+                </div>  
+            </div>`
+        </header>
+        <div class="banner-content">
+            <button class="play_button">Play</button>
+            <button class="moreinfo">More Info</button>
+            <div class="spacediv"></div>
+        </div>
+        <!--netflix originals-->
+        <div class="movie-content">
+            NETFLIX ORIGINALS
+            <div class="row__posters">
+                <img src="netflix-images/large-movie1.jpg" alt="" class="row_poster row__posterLarge">
+                <img src="netflix-images/large-movie2.jpg" alt="" class="row_poster row__posterLarge">
+                <img src="netflix-images/large-movie3.jpg" alt="" class="row_poster row__posterLarge">
+                <img src="netflix-images/large-movie4.jpg" alt="" class="row_poster row__posterLarge">
+                <img src="netflix-images/large-movie5.jpg" alt="" class="row_poster row__posterLarge">
+                <img src="netflix-images/large-movie6.jpg" alt="" class="row_poster row__posterLarge">
+                <img src="netflix-images/large-movie7.jpg" alt="" class="row_poster row__posterLarge">
+                <img src="netflix-images/large-movie8.jpg" alt="" class="row_poster row__posterLarge">
+                <img src="netflix-images/large-movie1.jpg" alt="" class="row_poster row__posterLarge">
+                <img src="netflix-images/large-movie2.jpg" alt="" class="row_poster row__posterLarge">
+                <img src="netflix-images/large-movie3.jpg" alt="" class="row_poster row__posterLarge">
+                <img src="netflix-images/large-movie4.jpg" alt="" class="row_poster row__posterLarge">
+                <img src="netflix-images/large-movie5.jpg" alt="" class="row_poster row__posterLarge">
+                <img src="netflix-images/large-movie6.jpg" alt="" class="row_poster row__posterLarge">
+                <img src="netflix-images/large-movie7.jpg" alt="" class="row_poster row__posterLarge">
+                <img src="netflix-images/large-movie8.jpg" alt="" class="row_poster row__posterLarge">
+            </div>
+        </div>
+        <!--Trending now-->
+        <div class="movie-content">
+            Trending Now
+            <div class="row__posters">
+                <img src="netflix-images/small-movie1.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie2.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie3.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie4.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie6.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie5.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie7.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie8.jpg" alt="" class="row_poster">
+            </div>
+        </div>
+        <!--acton-->
+        <div class="movie-content">
+            Action
+            <div class="row__posters">
+                <img src="netflix-images/small-movie1.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie2.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie3.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie4.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie6.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie5.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie7.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie8.jpg" alt="" class="row_poster">
+            </div>
+        </div>
+        <!--comedy-->
+        <div class="movie-content">
+            Comdey
+            <div class="row__posters">
+                <img src="netflix-images/small-movie1.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie2.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie3.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie4.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie6.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie5.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie7.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie8.jpg" alt="" class="row_poster">
+            </div>
+        </div>
+        <!--Anime-->
+        <div class="movie-content">
+            Anime
+            <div class="row__posters">
+                <img src="netflix-images/small-movie1.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie2.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie3.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie4.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie6.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie5.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie7.jpg" alt="" class="row_poster">
+                <img src="netflix-images/small-movie8.jpg" alt="" class="row_poster">
+            </div>
+        </div>  
+        <script>
+            const onb = document.querySelector(".Netflix-header");
+            window.addEventListener("scroll",function(){
+                if (window.scrollY>=100){
+                    onb.style.backgroundColor = "#111";
+                }
+                else{
+                    onb.style.backgroundColor = "transparent";
+                }
+            });
+            </script>
+    </body>
